@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Back Floating Glassmorphic UI Layer Card (Tilted Left) -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-12">
+        <path android:pathData="M30,27h34c3.3,0 6,2.7 6,6v42c0,3.3 -2.7,6 -6,6H30c-3.3,0 -6,-2.7 -6,-6V33c0,-3.3 2.7,-6 6,-6z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="24"
+                    android:startY="27"
+                    android:endX="70"
+                    android:endY="81"
+                    android:type="linear">
+                    <item android:offset="0.0" android:color="#887A5CFF" />
+                    <item android:offset="1.0" android:color="#44EC4899" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M30,27h34c3.3,0 6,2.7 6,6v42c0,3.3 -2.7,6 -6,6H30c-3.3,0 -6,-2.7 -6,-6V33c0,-3.3 2.7,-6 6,-6z"
+            android:strokeWidth="1.2"
+            android:strokeColor="#88E9D5FF" />
+    </group>
+
+    <!-- 2. Main 3D Isometric Smartphone Studio Canvas -->
+    <path android:pathData="M39,23h30c4.4,0 8,3.6 8,8v46c0,4.4 -3.6,8 -8,8H39c-4.4,0 -8,-3.6 -8,-8V31c0,-4.4 3.6,-8 8,-8z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="31"
+                android:startY="23"
+                android:endX="77"
+                android:endY="85"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#152342" />
+                <item android:offset="0.5" android:color="#0D162C" />
+                <item android:offset="1.0" android:color="#1B1438" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing Neon Rim around Smartphone Frame -->
+    <path android:pathData="M39,23h30c4.4,0 8,3.6 8,8v46c0,4.4 -3.6,8 -8,8H39c-4.4,0 -8,-3.6 -8,-8V31c0,-4.4 3.6,-8 8,-8z">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="31"
+                android:startY="23"
+                android:endX="77"
+                android:endY="85"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00FFA3" />
+                <item android:offset="0.45" android:color="#38BDF8" />
+                <item android:offset="1.0" android:color="#F472B6" />
+            </gradient>
+        </aapt:attr>
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="1"
+                android:endY="1"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00000000" />
+                <item android:offset="1.0" android:color="#00000000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,23h30c4.4,0 8,3.6 8,8v46c0,4.4 -3.6,8 -8,8H39c-4.4,0 -8,-3.6 -8,-8V31c0,-4.4 3.6,-8 8,-8z"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FF38BDF8" />
+
+    <!-- Top Speaker / Camera Island Pill -->
+    <path
+        android:fillColor="#9938BDF8"
+        android:pathData="M49,27h10c1.1,0 2,0.9 2,2s-0.9,2 -2,2H49c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2z" />
+
+    <!-- Miniature Hero UI Card Inside Phone Screen -->
+    <path android:pathData="M37,34h34c2.2,0 4,1.8 4,4v16c0,2.2 -1.8,4 -4,4H37c-2.2,0 -4,-1.8 -4,-4V38c0,-2.2 1.8,-4 4,-4z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="33"
+                android:startY="34"
+                android:endX="75"
+                android:endY="58"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF00C2D1" />
+                <item android:offset="0.55" android:color="#FF6366F1" />
+                <item android:offset="1.0" android:color="#FFEC4899" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Miniature Bento Grid Tiles Inside Phone Screen -->
+    <path
+        android:fillColor="#CC00FFA3"
+        android:pathData="M37,62h15c1.7,0 3,1.3 3,3v8c0,1.7 -1.3,3 -3,3H37c-1.7,0 -3,-1.3 -3,-3v-8c0,-1.7 1.3,-3 3,-3z" />
+    <path
+        android:fillColor="#CCA78BFA"
+        android:pathData="M59,62h12c1.7,0 3,1.3 3,3v8c0,1.7 -1.3,3 -3,3H59c-1.7,0 -3,-1.3 -3,-3v-8c0,-1.7 1.3,-3 3,-3z" />
+
+    <!-- Bottom Home Indicator Bar -->
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M47,79h14c0.8,0 1.5,0.7 1.5,1.5S61.8,82 61,82H47c-0.8,0 -1.5,-0.7 -1.5,-1.5S46.2,79 47,79z" />
+
+    <!-- 3. Floating Golden-White AI / UI Sparkle Star Badge (Top-Right) -->
+    <path
+        android:fillColor="#4400FFA3"
+        android:pathData="M73,32m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path android:pathData="M73,21L75.6,29.4L84,32L75.6,34.6L73,43L70.4,34.6L62,32L70.4,29.4Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="62"
+                android:startY="21"
+                android:endX="84"
+                android:endY="43"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF" />
+                <item android:offset="0.55" android:color="#FF9CF0FA" />
+                <item android:offset="1.0" android:color="#FF00FFA3" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 4. Center White UI/UX Sparkle Emblem Inside Hero Card -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,38L55.8,44.2L62,46L55.8,47.8L54,54L52.2,47.8L46,46L52.2,44.2Z" />
+</vector>

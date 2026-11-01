@@ -1,0 +1,31 @@
+name: Build Ultra-Compressed APK
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.7
+      - name: Unit tests
+        run: gradle :app:testDebugUnitTest --no-daemon
+      - name: Assemble ultra-compressed debug & release APKs
+        run: gradle :app:assembleDebug :app:assembleRelease --no-daemon
+      - name: Show compressed APK sizes
+        run: ls -lh app/build/outputs/apk/debug/*.apk app/build/outputs/apk/release/*.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: uiux-name-explorer-ultra-compressed-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: uiux-name-explorer-ultra-compressed-release-apk
+          path: app/build/outputs/apk/release/*.apk

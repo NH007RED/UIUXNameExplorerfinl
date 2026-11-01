@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "134047791373",
+    "firebase_url": "https://ui-design-b404d-default-rtdb.firebaseio.com",
+    "project_id": "ui-design-b404d",
+    "storage_bucket": "ui-design-b404d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134047791373:android:75516a1b5bff5c62cb1844",
+        "android_client_info": {
+          "package_name": "com.nh.uiuxexplorer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv1E64RAf9u69DhTeyP0n3lv2dJZycJaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

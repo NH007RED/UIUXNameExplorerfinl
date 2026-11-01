@@ -1,0 +1,19 @@
+package com.nh.uiuxexplorer.data.remote
+
+import okhttp3.RequestBody
+import okhttp3.ResponseBody
+import retrofit2.Response
+import retrofit2.http.Body
+import retrofit2.http.HeaderMap
+import retrofit2.http.POST
+import retrofit2.http.Url
+
+/** Generic JSON POST. The full endpoint URL is configured by the user at runtime. */
+interface AiApi {
+    @POST
+    suspend fun post(
+        @Url url: String,
+        @HeaderMap headers: Map<String, String>,
+        @Body body: RequestBody
+    ): Response<ResponseBody>
+}
